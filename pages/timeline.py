@@ -33,7 +33,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-html_content = Path("timeline.html").read_text(encoding="utf-8")
+html_content = (Path(__file__).parent.parent / "timeline.html").read_text(encoding="utf-8")
 
 full_page = f"""<!DOCTYPE html>
 <html lang="en">
