@@ -2,7 +2,7 @@ from pathlib import Path
 import streamlit as st
 
 ROOT = Path(__file__).parent.parent
-html_content = (ROOT / "timeline.html").read_text(encoding="utf-8")
+html_content = (ROOT / "index.html").read_text(encoding="utf-8")
 
 full_page = f"""<!DOCTYPE html>
 <html lang="en">
