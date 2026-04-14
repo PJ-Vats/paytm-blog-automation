@@ -37,7 +37,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-html_content = Path("index.html").read_text(encoding="utf-8")
+html_content = (Path(__file__).parent / "index.html").read_text(encoding="utf-8")
 
 # Wrap the fragment in a full HTML page with CSS variable defaults so the
 # component renders correctly in Streamlit's light-mode iframe.
